@@ -2,8 +2,6 @@
 //  ViewController.swift
 //  kaganinaPW4
 //
-//  Created by Ксения Ганина on 14.11.2022.
-//
 
 import UIKit
 
@@ -129,9 +127,7 @@ extension UIColor {
         var green: CGFloat = 0
         var blue: CGFloat = 0
         var alpha: CGFloat = 0
-        
         getRed(&red, green: &green, blue: &blue, alpha: &alpha)
-        
         return (red, green, blue, alpha)
     }
 }
@@ -154,9 +150,7 @@ extension ColorPaletteView {
             slider.value = value
             colorLabel.text = colorName
             setupView()
-            
-            slider.addTarget(self, action:
-                                #selector(sliderMoved(_:)), for: .touchDragInside)
+            slider.addTarget(self, action: #selector(sliderMoved(_:)), for: .touchDragInside)
         }
         
         @available(*, unavailable)
@@ -192,7 +186,6 @@ extension ColorPaletteView {
 
 final class ColorPaletteView: UIControl, ChangeColor {
     private let defaultColor = UIColor.systemGray6
-    
     private let stackView = UIStackView()
     private(set) var chosenColor: UIColor = .systemGray6
     
@@ -268,7 +261,6 @@ final class ColorPaletteView: UIControl, ChangeColor {
     
     func colorChange(to newColor: UIColor) {
         self.chosenColor = newColor
-        
         self.redControl.colorChange(to: Float(newColor.rgba.red))
         self.greenControl.colorChange(to: Float(newColor.rgba.green))
         self.blueControl.colorChange(to: Float(newColor.rgba.blue))
@@ -327,8 +319,7 @@ final class WelcomeViewController: UIViewController {
         incrementButton.pinLeft(to: self.view, Int(self.view.viewWidth / 10))
         incrementButton.pinRight(to: self.view, Int(self.view.viewWidth / 10))
         
-        incrementButton.addTarget(self, action:
-                                    #selector(incrementButtonPressed), for: .touchUpInside)
+        incrementButton.addTarget(self, action: #selector(incrementButtonPressed), for: .touchUpInside)
     }
 
     private func setupValueLabel() {
@@ -437,19 +428,14 @@ final class WelcomeViewController: UIViewController {
 
     private func setupMenuButtons() {
         let colorsButton = makeMenuButton(title: "🎨")
-
-        colorsButton.addTarget(self, action:
-                                #selector(paletteButtonPressed), for: .touchUpInside)
+        colorsButton.addTarget(self, action: #selector(paletteButtonPressed), for: .touchUpInside)
         
         let notesButton = makeMenuButton(title: "✏")
-        
-        notesButton.addTarget(self, action:
-                                #selector(openNotesView), for: .touchUpInside)
+        notesButton.addTarget(self, action: #selector(openNotesView), for: .touchUpInside)
         
         let newsButton = makeMenuButton(title: "📰")
 
         buttonsSV = UIStackView(arrangedSubviews: [colorsButton, notesButton, newsButton])
-        
         buttonsSV.spacing = 12
         buttonsSV.axis = .horizontal
         buttonsSV.distribution = .fillEqually
@@ -465,38 +451,24 @@ final class WelcomeViewController: UIViewController {
         view.addSubview(colorPaletteView)
         
         colorPaletteView.translatesAutoresizingMaskIntoConstraints = false
-        
         NSLayoutConstraint.activate([
             colorPaletteView.topAnchor.constraint(equalTo: incrementButton.bottomAnchor, constant: 5),
             colorPaletteView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: self.view.viewWidth / 30),
             colorPaletteView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -self.view.viewWidth / 30),
             colorPaletteView.bottomAnchor.constraint(equalTo: buttonsSV.topAnchor, constant: -1)
             ])
-        
-        colorPaletteView.addTarget(self, action:
-                                    #selector(changeColor(_:)), for: .touchDragInside)
+        colorPaletteView.addTarget(self, action: #selector(changeColor(_:)), for: .touchDragInside)
     }
     
     @objc
     private func openNotesView() {
-        
-        //self.navigationController?.pushViewController(controller, animated: true)
-        //show(controller, sender: self)
-        //self.present(controller, animated: true)
-        //self.dismiss(animated: true)
-        
-        //self.navigationController?.pushViewController(controller, animated: true)
-        //controller.viewDidLoad()
-        
-        
+        self.notesViewController.view.backgroundColor = view.backgroundColor ?? .systemBackground
         if let sheet = self.notesViewController.sheetPresentationController {
-            sheet.detents = [.medium(), .large()]
+            sheet.detents = [.large()]
             sheet.prefersGrabberVisible = true
             sheet.prefersScrollingExpandsWhenScrolledToEdge = false
         }
-        
         self.present(self.notesViewController, animated: true, completion: nil)
-        
     }
     
     @objc
