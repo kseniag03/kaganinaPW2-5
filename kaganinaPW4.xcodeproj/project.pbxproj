@@ -10,11 +10,23 @@
 		1C397447293E42B500A2DF7A /* NewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C397446293E42B500A2DF7A /* NewsListViewController.swift */; };
 		1C81776629223400002D1E32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C81776529223400002D1E32 /* AppDelegate.swift */; };
 		1C81776829223400002D1E32 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C81776729223400002D1E32 /* SceneDelegate.swift */; };
-		1C81776A29223400002D1E32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C81776929223400002D1E32 /* ViewController.swift */; };
+		1C81776A29223400002D1E32 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C81776929223400002D1E32 /* WelcomeViewController.swift */; };
 		1C81776F29223403002D1E32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C81776E29223403002D1E32 /* Assets.xcassets */; };
 		1C81777229223403002D1E32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C81777029223403002D1E32 /* LaunchScreen.storyboard */; };
 		1C81777A2922361F002D1E32 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8177792922361F002D1E32 /* NotesViewController.swift */; };
 		1C81777C29223F8E002D1E32 /* ShortNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C81777B29223F8E002D1E32 /* ShortNote.swift */; };
+		1CCDFD662943CCF400EA1590 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCDFD652943CCF400EA1590 /* NewsViewController.swift */; };
+		1CCDFD682943CDD200EA1590 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCDFD672943CDD200EA1590 /* ApiService.swift */; };
+		1CCDFD6A2943CE2B00EA1590 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCDFD692943CE2B00EA1590 /* News.swift */; };
+		1CCDFD6C2943CF1700EA1590 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCDFD6B2943CF1700EA1590 /* NewsViewModel.swift */; };
+		1CCDFD6E2943CF3A00EA1590 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCDFD6D2943CF3A00EA1590 /* NewsCell.swift */; };
+		1CCDFD742943D0CD00EA1590 /* PinLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCDFD732943D0CD00EA1590 /* PinLibrary.swift */; };
+		1CCDFD762943D2CB00EA1590 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCDFD752943D2CB00EA1590 /* UIColorExtension.swift */; };
+		1CCDFD782943D33400EA1590 /* ColorPaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCDFD772943D33400EA1590 /* ColorPaletteView.swift */; };
+		1CCDFD7B2943D3D800EA1590 /* AddNoteDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCDFD7A2943D3D800EA1590 /* AddNoteDelegate.swift */; };
+		1CCDFD7D2943D40400EA1590 /* ChangeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCDFD7C2943D40400EA1590 /* ChangeColor.swift */; };
+		1CCDFD7F2943D44100EA1590 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCDFD7E2943D44100EA1590 /* NoteCell.swift */; };
+		1CCDFD812943D46600EA1590 /* AddNoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCDFD802943D46600EA1590 /* AddNoteCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +34,24 @@
 		1C81776229223400002D1E32 /* kaganinaPW4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kaganinaPW4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C81776529223400002D1E32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C81776729223400002D1E32 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1C81776929223400002D1E32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1C81776929223400002D1E32 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		1C81776E29223403002D1E32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C81777129223403002D1E32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C81777329223403002D1E32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C8177792922361F002D1E32 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		1C81777B29223F8E002D1E32 /* ShortNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortNote.swift; sourceTree = "<group>"; };
+		1CCDFD652943CCF400EA1590 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		1CCDFD672943CDD200EA1590 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		1CCDFD692943CE2B00EA1590 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		1CCDFD6B2943CF1700EA1590 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		1CCDFD6D2943CF3A00EA1590 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		1CCDFD732943D0CD00EA1590 /* PinLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PinLibrary.swift; path = kaganinaPW4/Controller/PinLibrary.swift; sourceTree = SOURCE_ROOT; };
+		1CCDFD752943D2CB00EA1590 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = kaganinaPW4/Controller/UIColorExtension.swift; sourceTree = SOURCE_ROOT; };
+		1CCDFD772943D33400EA1590 /* ColorPaletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColorPaletteView.swift; path = kaganinaPW4/Controller/ColorPaletteView.swift; sourceTree = SOURCE_ROOT; };
+		1CCDFD7A2943D3D800EA1590 /* AddNoteDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddNoteDelegate.swift; path = kaganinaPW4/Controller/AddNoteDelegate.swift; sourceTree = SOURCE_ROOT; };
+		1CCDFD7C2943D40400EA1590 /* ChangeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChangeColor.swift; path = kaganinaPW4/View/ChangeColor.swift; sourceTree = SOURCE_ROOT; };
+		1CCDFD7E2943D44100EA1590 /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NoteCell.swift; path = kaganinaPW4/Controller/NoteCell.swift; sourceTree = SOURCE_ROOT; };
+		1CCDFD802943D46600EA1590 /* AddNoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +84,69 @@
 		1C81776429223400002D1E32 /* kaganinaPW4 */ = {
 			isa = PBXGroup;
 			children = (
+				1CCDFD792943D3C300EA1590 /* Protocol */,
+				1CCDFD722943CF9400EA1590 /* Library */,
+				1CCDFD702943CF6000EA1590 /* Model */,
+				1CCDFD712943CF6E00EA1590 /* View */,
+				1CCDFD6F2943CF4E00EA1590 /* Controller */,
 				1C81776529223400002D1E32 /* AppDelegate.swift */,
 				1C81776729223400002D1E32 /* SceneDelegate.swift */,
-				1C81776929223400002D1E32 /* ViewController.swift */,
-				1C8177792922361F002D1E32 /* NotesViewController.swift */,
-				1C397446293E42B500A2DF7A /* NewsListViewController.swift */,
-				1C81777B29223F8E002D1E32 /* ShortNote.swift */,
 				1C81776E29223403002D1E32 /* Assets.xcassets */,
 				1C81777029223403002D1E32 /* LaunchScreen.storyboard */,
 				1C81777329223403002D1E32 /* Info.plist */,
 			);
 			path = kaganinaPW4;
+			sourceTree = "<group>";
+		};
+		1CCDFD6F2943CF4E00EA1590 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1C81776929223400002D1E32 /* WelcomeViewController.swift */,
+				1C8177792922361F002D1E32 /* NotesViewController.swift */,
+				1C397446293E42B500A2DF7A /* NewsListViewController.swift */,
+				1CCDFD652943CCF400EA1590 /* NewsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1CCDFD702943CF6000EA1590 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1C81777B29223F8E002D1E32 /* ShortNote.swift */,
+				1CCDFD692943CE2B00EA1590 /* News.swift */,
+				1CCDFD6B2943CF1700EA1590 /* NewsViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1CCDFD712943CF6E00EA1590 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1CCDFD772943D33400EA1590 /* ColorPaletteView.swift */,
+				1CCDFD7E2943D44100EA1590 /* NoteCell.swift */,
+				1CCDFD802943D46600EA1590 /* AddNoteCell.swift */,
+				1CCDFD6D2943CF3A00EA1590 /* NewsCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1CCDFD722943CF9400EA1590 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				1CCDFD732943D0CD00EA1590 /* PinLibrary.swift */,
+				1CCDFD752943D2CB00EA1590 /* UIColorExtension.swift */,
+				1CCDFD672943CDD200EA1590 /* ApiService.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		1CCDFD792943D3C300EA1590 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				1CCDFD7C2943D40400EA1590 /* ChangeColor.swift */,
+				1CCDFD7A2943D3D800EA1590 /* AddNoteDelegate.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,11 +220,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C81777A2922361F002D1E32 /* NotesViewController.swift in Sources */,
-				1C81776A29223400002D1E32 /* ViewController.swift in Sources */,
+				1CCDFD7D2943D40400EA1590 /* ChangeColor.swift in Sources */,
+				1C81776A29223400002D1E32 /* WelcomeViewController.swift in Sources */,
+				1CCDFD7F2943D44100EA1590 /* NoteCell.swift in Sources */,
+				1CCDFD782943D33400EA1590 /* ColorPaletteView.swift in Sources */,
 				1C81776629223400002D1E32 /* AppDelegate.swift in Sources */,
+				1CCDFD742943D0CD00EA1590 /* PinLibrary.swift in Sources */,
+				1CCDFD6A2943CE2B00EA1590 /* News.swift in Sources */,
+				1CCDFD7B2943D3D800EA1590 /* AddNoteDelegate.swift in Sources */,
 				1C397447293E42B500A2DF7A /* NewsListViewController.swift in Sources */,
+				1CCDFD762943D2CB00EA1590 /* UIColorExtension.swift in Sources */,
+				1CCDFD662943CCF400EA1590 /* NewsViewController.swift in Sources */,
 				1C81776829223400002D1E32 /* SceneDelegate.swift in Sources */,
+				1CCDFD812943D46600EA1590 /* AddNoteCell.swift in Sources */,
+				1CCDFD6C2943CF1700EA1590 /* NewsViewModel.swift in Sources */,
+				1CCDFD682943CDD200EA1590 /* ApiService.swift in Sources */,
 				1C81777C29223F8E002D1E32 /* ShortNote.swift in Sources */,
+				1CCDFD6E2943CF3A00EA1590 /* NewsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  kaganinaPW4
+//  kaganinaPW5
 //
 
 import UIKit
@@ -17,7 +17,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         let navigationController =
         UINavigationController(rootViewController: WelcomeViewController())
-        //UINavigationController(rootViewController: NotesViewController())
         window.rootViewController = navigationController
         self.window = window
         window.makeKeyAndVisible()
