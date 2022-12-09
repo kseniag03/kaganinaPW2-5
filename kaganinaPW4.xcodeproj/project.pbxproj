@@ -45,12 +45,12 @@
 		1CCDFD692943CE2B00EA1590 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		1CCDFD6B2943CF1700EA1590 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 		1CCDFD6D2943CF3A00EA1590 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
-		1CCDFD732943D0CD00EA1590 /* PinLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PinLibrary.swift; path = kaganinaPW4/Controller/PinLibrary.swift; sourceTree = SOURCE_ROOT; };
-		1CCDFD752943D2CB00EA1590 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = kaganinaPW4/Controller/UIColorExtension.swift; sourceTree = SOURCE_ROOT; };
-		1CCDFD772943D33400EA1590 /* ColorPaletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColorPaletteView.swift; path = kaganinaPW4/Controller/ColorPaletteView.swift; sourceTree = SOURCE_ROOT; };
-		1CCDFD7A2943D3D800EA1590 /* AddNoteDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddNoteDelegate.swift; path = kaganinaPW4/Controller/AddNoteDelegate.swift; sourceTree = SOURCE_ROOT; };
-		1CCDFD7C2943D40400EA1590 /* ChangeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChangeColor.swift; path = kaganinaPW4/View/ChangeColor.swift; sourceTree = SOURCE_ROOT; };
-		1CCDFD7E2943D44100EA1590 /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NoteCell.swift; path = kaganinaPW4/Controller/NoteCell.swift; sourceTree = SOURCE_ROOT; };
+		1CCDFD732943D0CD00EA1590 /* PinLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PinLibrary.swift; path = kaganinaPW4/Library/PinLibrary.swift; sourceTree = SOURCE_ROOT; };
+		1CCDFD752943D2CB00EA1590 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = kaganinaPW4/Library/UIColorExtension.swift; sourceTree = SOURCE_ROOT; };
+		1CCDFD772943D33400EA1590 /* ColorPaletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColorPaletteView.swift; path = kaganinaPW4/View/ColorPaletteView.swift; sourceTree = SOURCE_ROOT; };
+		1CCDFD7A2943D3D800EA1590 /* AddNoteDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddNoteDelegate.swift; path = kaganinaPW4/Protocol/AddNoteDelegate.swift; sourceTree = SOURCE_ROOT; };
+		1CCDFD7C2943D40400EA1590 /* ChangeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChangeColor.swift; path = kaganinaPW4/Protocol/ChangeColor.swift; sourceTree = SOURCE_ROOT; };
+		1CCDFD7E2943D44100EA1590 /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NoteCell.swift; path = kaganinaPW4/View/NoteCell.swift; sourceTree = SOURCE_ROOT; };
 		1CCDFD802943D46600EA1590 /* AddNoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
