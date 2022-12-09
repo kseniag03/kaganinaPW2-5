@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C397447293E42B500A2DF7A /* NewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C397446293E42B500A2DF7A /* NewsListViewController.swift */; };
 		1C81776629223400002D1E32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C81776529223400002D1E32 /* AppDelegate.swift */; };
 		1C81776829223400002D1E32 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C81776729223400002D1E32 /* SceneDelegate.swift */; };
 		1C81776A29223400002D1E32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C81776929223400002D1E32 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C397446293E42B500A2DF7A /* NewsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewController.swift; sourceTree = "<group>"; };
 		1C81776229223400002D1E32 /* kaganinaPW4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kaganinaPW4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C81776529223400002D1E32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C81776729223400002D1E32 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				1C81776729223400002D1E32 /* SceneDelegate.swift */,
 				1C81776929223400002D1E32 /* ViewController.swift */,
 				1C8177792922361F002D1E32 /* NotesViewController.swift */,
+				1C397446293E42B500A2DF7A /* NewsListViewController.swift */,
 				1C81777B29223F8E002D1E32 /* ShortNote.swift */,
 				1C81776E29223403002D1E32 /* Assets.xcassets */,
 				1C81777029223403002D1E32 /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 				1C81777A2922361F002D1E32 /* NotesViewController.swift in Sources */,
 				1C81776A29223400002D1E32 /* ViewController.swift in Sources */,
 				1C81776629223400002D1E32 /* AppDelegate.swift in Sources */,
+				1C397447293E42B500A2DF7A /* NewsListViewController.swift in Sources */,
 				1C81776829223400002D1E32 /* SceneDelegate.swift in Sources */,
 				1C81777C29223F8E002D1E32 /* ShortNote.swift in Sources */,
 			);

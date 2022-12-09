@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  kaganinaPW4
+//  kaganinaPW3
 //
 
 import UIKit
@@ -74,6 +74,17 @@ extension UIView {
         let constraint = bottomAnchor.constraint(
             equalTo: superview.bottomAnchor,
             constant: CGFloat(const * -1)
+        )
+        constraint.isActive = true
+        return constraint
+    }
+    
+    @discardableResult
+    func pinBottom(to side: NSLayoutYAxisAnchor, _ const: Int = 0) -> NSLayoutConstraint {
+        translatesAutoresizingMaskIntoConstraints = false
+        let constraint = bottomAnchor.constraint(
+            equalTo: side,
+            constant: CGFloat(const)
         )
         constraint.isActive = true
         return constraint
@@ -281,7 +292,7 @@ final class WelcomeViewController: UIViewController {
     
     private let colorPaletteView = ColorPaletteView()
     
-    private let notesViewController = NotesViewController()
+    //private let notesViewController = NotesViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -431,9 +442,10 @@ final class WelcomeViewController: UIViewController {
         colorsButton.addTarget(self, action: #selector(paletteButtonPressed), for: .touchUpInside)
         
         let notesButton = makeMenuButton(title: "✏")
-        notesButton.addTarget(self, action: #selector(openNotesView), for: .touchUpInside)
+        notesButton.addTarget(self, action: #selector(notesButtonPressed), for: .touchUpInside)
         
         let newsButton = makeMenuButton(title: "📰")
+        newsButton.addTarget(self, action: #selector(newsButtonPressed), for: .touchUpInside)
 
         buttonsSV = UIStackView(arrangedSubviews: [colorsButton, notesButton, newsButton])
         buttonsSV.spacing = 12
@@ -461,14 +473,23 @@ final class WelcomeViewController: UIViewController {
     }
     
     @objc
-    private func openNotesView() {
-        self.notesViewController.view.backgroundColor = view.backgroundColor ?? .systemBackground
-        if let sheet = self.notesViewController.sheetPresentationController {
+    private func notesButtonPressed() {
+        let notesViewController = NotesViewController()
+        notesViewController.view.backgroundColor = view.backgroundColor ?? .systemBackground
+        /*if let sheet = self.notesViewController.sheetPresentationController {
             sheet.detents = [.large()]
             sheet.prefersGrabberVisible = true
             sheet.prefersScrollingExpandsWhenScrolledToEdge = false
         }
-        self.present(self.notesViewController, animated: true, completion: nil)
+        self.present(self.notesViewController, animated: true, completion: nil)*/
+        
+        navigationController?.pushViewController(notesViewController, animated: true)
+    }
+    
+    @objc private func newsButtonPressed() {
+        let newsListController = NewsListViewController()
+        newsListController.view.backgroundColor = view.backgroundColor ?? .systemBackground
+        navigationController?.pushViewController(newsListController, animated: true)
     }
     
     @objc
